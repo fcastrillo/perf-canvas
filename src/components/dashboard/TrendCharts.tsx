@@ -45,7 +45,7 @@ export function TrendCharts({ trends }: TrendChartsProps) {
       {/* Quarterly Trends Line Chart */}
       <div className="lg:col-span-2 bg-card rounded-xl shadow-lg p-6">
         <h3 className="text-lg font-semibold text-foreground mb-4">
-          Tendencias Trimestrales 2024
+          Tendencias Trimestrales 2026
         </h3>
         <ResponsiveContainer width="100%" height={300}>
           <LineChart data={trends}>

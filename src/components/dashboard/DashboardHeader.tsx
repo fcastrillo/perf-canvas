@@ -39,10 +39,10 @@ export function DashboardHeader({
   ];
 
   const periods = [
-    { id: 'Q1' as PeriodFilter, label: 'Q1 2024' },
-    { id: 'Q2' as PeriodFilter, label: 'Q2 2024' },
-    { id: 'Q3' as PeriodFilter, label: 'Q3 2024' },
-    { id: 'Q4' as PeriodFilter, label: 'Q4 2024' }
+    { id: 'Q1' as PeriodFilter, label: 'Q1 2026' },
+    { id: 'Q2' as PeriodFilter, label: 'Q2 2026' },
+    { id: 'Q3' as PeriodFilter, label: 'Q3 2026' },
+    { id: 'Q4' as PeriodFilter, label: 'Q4 2026' }
   ];
 
   return (
@@ -55,7 +55,7 @@ export function DashboardHeader({
               Station Performance Dashboard
             </h1>
             <Badge variant="outline" className="text-primary border-primary">
-              Q4 2024
+              Q4 2026
             </Badge>
             <div className="flex items-center space-x-1">
               <Bell className="h-4 w-4 text-warning" />

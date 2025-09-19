@@ -18,7 +18,7 @@ const Index = () => {
     setCurrentPeriod(period);
     toast({
       title: "Período actualizado",
-      description: `Mostrando datos para ${period} 2024`,
+      description: `Mostrando datos para ${period} 2026`,
     });
   };
 
@@ -163,7 +163,7 @@ const Index = () => {
       {/* Trend Analysis Summary */}
       <div className="bg-card rounded-xl shadow-lg p-6 mt-6">
         <h3 className="text-lg font-semibold text-foreground mb-4">
-          Análisis de Tendencias 2024
+          Análisis de Tendencias 2026
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="space-y-2">
@@ -183,7 +183,7 @@ const Index = () => {
             </ul>
           </div>
           <div className="space-y-2">
-            <h4 className="font-medium text-foreground">🎯 Objetivos Q1 2025</h4>
+            <h4 className="font-medium text-foreground">🎯 Objetivos Q1 2027</h4>
             <ul className="text-sm text-muted-foreground space-y-1">
               <li>• Tiempo ciclo &lt; 6 días</li>
               <li>• 20+ despliegues/semana</li>

@@ -103,28 +103,28 @@ export const developersData: DeveloperMetrics[] = [
 
 export const quarterlyTrends: QuarterlyTrends[] = [
   {
-    quarter: "Q1 2024",
+    quarter: "Q1 2026",
     cycleTime: 15.2,
     deployments: 5.8,
     productivity: 65,
     quality: 6.8
   },
   {
-    quarter: "Q2 2024",
+    quarter: "Q2 2026",
     cycleTime: 12.5,
     deployments: 8.7,
     productivity: 72,
     quality: 7.4
   },
   {
-    quarter: "Q3 2024",
+    quarter: "Q3 2026",
     cycleTime: 8.2,
     deployments: 15.3,
     productivity: 87,
     quality: 8.1
   },
   {
-    quarter: "Q4 2024",
+    quarter: "Q4 2026",
     cycleTime: 6.5,
     deployments: 18.2,
     productivity: 92,
