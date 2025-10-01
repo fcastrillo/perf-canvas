@@ -16,6 +16,10 @@ export default defineConfig(({ mode }) => ({
     hmr: {
       clientPort: 5000,
     },
+    watch: {
+      usePolling: false,
+      useFsEvents: false,
+    },
   },
   preview: {
     host: "0.0.0.0",
