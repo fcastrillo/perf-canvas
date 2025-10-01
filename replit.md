@@ -37,6 +37,7 @@ This is a Vite + React + TypeScript dashboard application imported from GitHub (
 ### Vite Configuration
 - **Dev Server**: Port 5000, Host 0.0.0.0 (configured for Replit)
 - **Preview Server**: Port 5000, Host 0.0.0.0 (configured for deployment)
+- **Allowed Hosts**: `.replit.dev` and `.repl.co` domains (required for Replit proxy)
 - **HMR**: Configured with client port 5000 for Replit proxy compatibility
 - **Path Alias**: `@` → `./src`
 
@@ -70,6 +71,7 @@ This is a Vite + React + TypeScript dashboard application imported from GitHub (
 ## Recent Changes
 - **2025-10-01**: Initial Replit setup
   - Configured Vite to use port 5000 and host 0.0.0.0
+  - Added `allowedHosts` configuration for Replit proxy domains (.replit.dev, .repl.co)
   - Set up workflow for frontend development
   - Configured deployment settings for autoscale
   - Installed all npm dependencies
