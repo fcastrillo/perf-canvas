@@ -14,11 +14,14 @@ export default defineConfig(({ mode }) => ({
       ".repl.co"
     ],
     hmr: {
+      overlay: false,
       clientPort: 5000,
+      timeout: 30000,
     },
     watch: {
       usePolling: false,
       useFsEvents: false,
+      ignored: ['**/node_modules/**', '**/.git/**'],
     },
   },
   preview: {
