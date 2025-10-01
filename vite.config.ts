@@ -9,31 +9,26 @@ export default defineConfig(({ mode }) => ({
     host: "0.0.0.0",
     port: 5000,
     strictPort: true,
-    allowedHosts: [
-      ".replit.dev",
-      ".repl.co"
-    ],
     hmr: {
-      overlay: false,
-      clientPort: 5000,
-      timeout: 30000,
+      protocol: "wss",
+      host: process.env.REPLIT_DEV_DOMAIN,
+      clientPort: 443,
     },
     watch: {
-      usePolling: false,
-      useFsEvents: false,
-      ignored: ['**/node_modules/**', '**/.git/**'],
+      usePolling: true,
     },
   },
   preview: {
     host: "0.0.0.0",
     port: 5000,
     strictPort: true,
-    allowedHosts: [
-      ".replit.dev",
-      ".repl.co"
-    ],
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [
+    react({
+      fastRefresh: true,
+    }), 
+    mode === "development" && componentTagger()
+  ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
